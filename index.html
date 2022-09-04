@@ -60,7 +60,19 @@
       <section class="section hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-button">Замовити послугу</button>
+          <button data-modal-open type="button" class="hero-button">Замовити послугу</button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button class="modal-close-btn" type="button" data-modal-close>
+                <svg class="close-btn-icon" width="18px" height="18px">
+                  <use
+                    href="./images/icons.svg#close-black
+                "
+                  ></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -123,31 +135,40 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="what-we-do list">
             <li class="item">
-              <img
-                class="what-we-do-img"
-                src="./images/what-we-do/hands.jpeg"
-                alt="руки на клавіатурі"
-                width="370"
-                height="294"
-              />
+              <div class="about-box">
+                <img
+                  class="what-we-do-img"
+                  src="./images/what-we-do/hands.jpeg"
+                  alt="руки на клавіатурі"
+                  width="370"
+                  height="294"
+                />
+                <h3 class="about-title">Десктопні додатки</h3>
+              </div>
             </li>
             <li class="item">
-              <img
-                class="what-we-do-img"
-                src="./images/what-we-do/cellphone.jpeg"
-                alt="мобільний телефон в руці"
-                width="370"
-                height="294"
-              />
+              <div class="about-box">
+                <img
+                  class="what-we-do-img"
+                  src="./images/what-we-do/cellphone.jpeg"
+                  alt="мобільний телефон в руці"
+                  width="370"
+                  height="294"
+                />
+                <h3 class="about-title">Мобільні додатки</h3>
+              </div>
             </li>
             <li class="item">
-              <img
-                class="what-we-do-img"
-                src="./images/what-we-do/tablet.jpeg"
-                alt="планшет в руці"
-                width="370"
-                height="294"
-              />
+              <div class="about-box">
+                <img
+                  class="what-we-do-img"
+                  src="./images/what-we-do/tablet.jpeg"
+                  alt="планшет в руці"
+                  width="370"
+                  height="294"
+                />
+                <h3 class="about-title">Дизайнерські рішення</h3>
+              </div>
             </li>
           </ul>
         </div>
@@ -548,5 +569,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
